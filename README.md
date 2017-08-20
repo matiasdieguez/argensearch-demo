@@ -8,8 +8,12 @@ install-package argensearch
 
 ## Ejemplos
 
-var persona = ArgenSearch.Search(123456);
-var id = persona.Documentos[1];
+```csharp
+using ArgenSearch;
 
-var datos = ArgenSearch.Detail(id);
+var persona = await ArgenSearchClient.Search(123456);
 
+var id = persona.Data[0];
+
+var datos = await ArgenSearchClient.Detail(id);
+```
