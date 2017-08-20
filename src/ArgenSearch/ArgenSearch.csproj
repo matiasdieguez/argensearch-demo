@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
+    <PackageId>ArgenSearchDemo</PackageId>
+    <Description>ArgenSearch es un cliente en C# para las búsqueda de personas en la API publica de la AFIP
+
+</Description>
+    <PackageProjectUrl>https://github.com/matiasdieguez/argensearch-demo</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>ArgenSearchDemo</Authors>
+    <Company>ArgenSearchDemo</Company>
+    <Product>ArgenSearchDemo</Product>
   </PropertyGroup>
 
   <ItemGroup>

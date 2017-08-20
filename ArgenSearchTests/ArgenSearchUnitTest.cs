@@ -1,6 +1,5 @@
 ﻿using ArgenSearch;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
 namespace ArgenSearchTests
 {
@@ -10,10 +9,12 @@ namespace ArgenSearchTests
         [TestMethod]
         public void TestMethod()
         {
-            var persona = ArgenSearchClient.Search(23456789).Result;
+            var persona = ArgenSearchClient.Search(123456).Result;
             var id = persona.Data[0];
+            Assert.IsTrue(persona.Success);
 
             var datos = ArgenSearchClient.Detail(id).Result;
+            Assert.IsTrue(datos.Success);
         }
     }
 }
